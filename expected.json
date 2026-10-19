@@ -1,0 +1,682 @@
+[
+ {
+  "fn": "marginTruth",
+  "args": [
+   "1000",
+   "50",
+   "95"
+  ],
+  "expected": "A poll of 1,000 people with 50% on one side has a margin of ±3.10 points at 95% confidence, so the whole group's share could be anywhere from 46.90% to 53.10%."
+ },
+ {
+  "fn": "marginTruth",
+  "args": [
+   "1000",
+   "50",
+   "90"
+  ],
+  "expected": "A poll of 1,000 people with 50% on one side has a margin of ±2.60 points at 90% confidence, so the whole group's share could be anywhere from 47.40% to 52.60%."
+ },
+ {
+  "fn": "marginTruth",
+  "args": [
+   "1000",
+   "50",
+   "99"
+  ],
+  "expected": "A poll of 1,000 people with 50% on one side has a margin of ±4.07 points at 99% confidence, so the whole group's share could be anywhere from 45.93% to 54.07%."
+ },
+ {
+  "fn": "marginTruth",
+  "args": [
+   "400",
+   "50",
+   "95"
+  ],
+  "expected": "A poll of 400 people with 50% on one side has a margin of ±4.90 points at 95% confidence, so the whole group's share could be anywhere from 45.10% to 54.90%."
+ },
+ {
+  "fn": "marginTruth",
+  "args": [
+   "1",
+   "50",
+   "95"
+  ],
+  "expected": "A poll of 1 person with 50% on one side has a margin of ±98.00 points at 95% confidence, so the whole group's share could be anywhere from 0.00% to 100.00%."
+ },
+ {
+  "fn": "marginTruth",
+  "args": [
+   "2",
+   "5",
+   "99"
+  ],
+  "expected": "A poll of 2 people with 5% on one side has a margin of ±39.70 points at 99% confidence, so the whole group's share could be anywhere from 0.00% to 44.70%."
+ },
+ {
+  "fn": "marginTruth",
+  "args": [
+   "10000000",
+   "50",
+   "95"
+  ],
+  "expected": "A poll of 10,000,000 people with 50% on one side has a margin of ±0.03 points at 95% confidence, so the whole group's share could be anywhere from 49.97% to 50.03%."
+ },
+ {
+  "fn": "marginTruth",
+  "args": [
+   "1000",
+   "10",
+   "95"
+  ],
+  "expected": "A poll of 1,000 people with 10% on one side has a margin of ±1.86 points at 95% confidence, so the whole group's share could be anywhere from 8.14% to 11.86%."
+ },
+ {
+  "fn": "marginTruth",
+  "args": [
+   "1000",
+   "90",
+   "95"
+  ],
+  "expected": "A poll of 1,000 people with 90% on one side has a margin of ±1.86 points at 95% confidence, so the whole group's share could be anywhere from 88.14% to 91.86%."
+ },
+ {
+  "fn": "marginTruth",
+  "args": [
+   "1000",
+   "1",
+   "95"
+  ],
+  "expected": "A poll of 1,000 people with 1% on one side has a margin of ±0.62 points at 95% confidence, so the whole group's share could be anywhere from 0.38% to 1.62%."
+ },
+ {
+  "fn": "marginTruth",
+  "args": [
+   "1000",
+   "99",
+   "99"
+  ],
+  "expected": "A poll of 1,000 people with 99% on one side has a margin of ±0.81 points at 99% confidence, so the whole group's share could be anywhere from 98.19% to 99.81%."
+ },
+ {
+  "fn": "marginTruth",
+  "args": [
+   "1500",
+   "47.5",
+   "95"
+  ],
+  "expected": "A poll of 1,500 people with 47.5% on one side has a margin of ±2.53 points at 95% confidence, so the whole group's share could be anywhere from 44.97% to 50.03%."
+ },
+ {
+  "fn": "marginTruth",
+  "args": [
+   "600",
+   "30.5",
+   "90"
+  ],
+  "expected": "A poll of 600 people with 30.5% on one side has a margin of ±3.09 points at 90% confidence, so the whole group's share could be anywhere from 27.41% to 33.59%."
+ },
+ {
+  "fn": "marginTruth",
+  "args": [
+   " 1000 ",
+   " 50 ",
+   " 95 "
+  ],
+  "expected": "A poll of 1,000 people with 50% on one side has a margin of ±3.10 points at 95% confidence, so the whole group's share could be anywhere from 46.90% to 53.10%."
+ },
+ {
+  "fn": "marginTruth",
+  "args": [
+   "12345",
+   "62",
+   "95"
+  ],
+  "expected": "A poll of 12,345 people with 62% on one side has a margin of ±0.86 points at 95% confidence, so the whole group's share could be anywhere from 61.14% to 62.86%."
+ },
+ {
+  "fn": "marginTruth",
+  "args": [
+   "100",
+   "50",
+   "99"
+  ],
+  "expected": "A poll of 100 people with 50% on one side has a margin of ±12.88 points at 99% confidence, so the whole group's share could be anywhere from 37.12% to 62.88%."
+ },
+ {
+  "fn": "marginTruth",
+  "args": [
+   "10",
+   "3",
+   "99"
+  ],
+  "expected": "A poll of 10 people with 3% on one side has a margin of ±13.90 points at 99% confidence, so the whole group's share could be anywhere from 0.00% to 16.90%."
+ },
+ {
+  "fn": "marginTruth",
+  "args": [
+   "250",
+   "75",
+   "90"
+  ],
+  "expected": "A poll of 250 people with 75% on one side has a margin of ±4.51 points at 90% confidence, so the whole group's share could be anywhere from 70.49% to 79.51%."
+ },
+ {
+  "fn": "marginTruth",
+  "args": [
+   "2500",
+   "50",
+   "95"
+  ],
+  "expected": "A poll of 2,500 people with 50% on one side has a margin of ±1.96 points at 95% confidence, so the whole group's share could be anywhere from 48.04% to 51.96%."
+ },
+ {
+  "fn": "marginTruth",
+  "args": [
+   "800",
+   "20",
+   "95"
+  ],
+  "expected": "A poll of 800 people with 20% on one side has a margin of ±2.77 points at 95% confidence, so the whole group's share could be anywhere from 17.23% to 22.77%."
+ },
+ {
+  "fn": "marginTruth",
+  "args": [
+   "0",
+   "50",
+   "95"
+  ],
+  "expected": "ERR:sample size must be a whole number from 1 to 10000000"
+ },
+ {
+  "fn": "marginTruth",
+  "args": [
+   "10000001",
+   "50",
+   "95"
+  ],
+  "expected": "ERR:sample size must be a whole number from 1 to 10000000"
+ },
+ {
+  "fn": "marginTruth",
+  "args": [
+   "1.5",
+   "50",
+   "95"
+  ],
+  "expected": "ERR:sample size must be a whole number from 1 to 10000000"
+ },
+ {
+  "fn": "marginTruth",
+  "args": [
+   "abc",
+   "50",
+   "95"
+  ],
+  "expected": "ERR:sample size must be a whole number from 1 to 10000000"
+ },
+ {
+  "fn": "marginTruth",
+  "args": [
+   "1000",
+   "0.9",
+   "95"
+  ],
+  "expected": "ERR:share must be a percent from 1 to 99 with at most 1 decimal"
+ },
+ {
+  "fn": "marginTruth",
+  "args": [
+   "1000",
+   "99.5",
+   "95"
+  ],
+  "expected": "ERR:share must be a percent from 1 to 99 with at most 1 decimal"
+ },
+ {
+  "fn": "marginTruth",
+  "args": [
+   "1000",
+   "50.55",
+   "95"
+  ],
+  "expected": "ERR:share must be a percent from 1 to 99 with at most 1 decimal"
+ },
+ {
+  "fn": "marginTruth",
+  "args": [
+   "1000",
+   "x",
+   "95"
+  ],
+  "expected": "ERR:share must be a percent from 1 to 99 with at most 1 decimal"
+ },
+ {
+  "fn": "marginTruth",
+  "args": [
+   "1000",
+   "50",
+   "80"
+  ],
+  "expected": "ERR:confidence must be 90, 95 or 99"
+ },
+ {
+  "fn": "marginTruth",
+  "args": [
+   "1000",
+   "50",
+   ""
+  ],
+  "expected": "ERR:confidence must be 90, 95 or 99"
+ },
+ {
+  "fn": "sizeTruth",
+  "args": [
+   "3",
+   "50",
+   "95"
+  ],
+  "expected": "To get a margin of ±3 points at 95% confidence with 50% on one side, a poll needs 1,068 people."
+ },
+ {
+  "fn": "sizeTruth",
+  "args": [
+   "5",
+   "50",
+   "95"
+  ],
+  "expected": "To get a margin of ±5 points at 95% confidence with 50% on one side, a poll needs 385 people."
+ },
+ {
+  "fn": "sizeTruth",
+  "args": [
+   "1",
+   "50",
+   "95"
+  ],
+  "expected": "To get a margin of ±1 points at 95% confidence with 50% on one side, a poll needs 9,604 people."
+ },
+ {
+  "fn": "sizeTruth",
+  "args": [
+   "3",
+   "50",
+   "99"
+  ],
+  "expected": "To get a margin of ±3 points at 99% confidence with 50% on one side, a poll needs 1,844 people."
+ },
+ {
+  "fn": "sizeTruth",
+  "args": [
+   "3",
+   "50",
+   "90"
+  ],
+  "expected": "To get a margin of ±3 points at 90% confidence with 50% on one side, a poll needs 752 people."
+ },
+ {
+  "fn": "sizeTruth",
+  "args": [
+   "0.1",
+   "50",
+   "99"
+  ],
+  "expected": "To get a margin of ±0.1 points at 99% confidence with 50% on one side, a poll needs 1,658,944 people."
+ },
+ {
+  "fn": "sizeTruth",
+  "args": [
+   "50",
+   "50",
+   "90"
+  ],
+  "expected": "To get a margin of ±50 points at 90% confidence with 50% on one side, a poll needs 3 people."
+ },
+ {
+  "fn": "sizeTruth",
+  "args": [
+   "3",
+   "10",
+   "95"
+  ],
+  "expected": "To get a margin of ±3 points at 95% confidence with 10% on one side, a poll needs 385 people."
+ },
+ {
+  "fn": "sizeTruth",
+  "args": [
+   "3.5",
+   "50",
+   "95"
+  ],
+  "expected": "To get a margin of ±3.5 points at 95% confidence with 50% on one side, a poll needs 784 people."
+ },
+ {
+  "fn": "sizeTruth",
+  "args": [
+   "3.50",
+   "50",
+   "95"
+  ],
+  "expected": "To get a margin of ±3.5 points at 95% confidence with 50% on one side, a poll needs 784 people."
+ },
+ {
+  "fn": "sizeTruth",
+  "args": [
+   "10",
+   "50",
+   "95"
+  ],
+  "expected": "To get a margin of ±10 points at 95% confidence with 50% on one side, a poll needs 97 people."
+ },
+ {
+  "fn": "sizeTruth",
+  "args": [
+   "10.0",
+   "50",
+   "95"
+  ],
+  "expected": "To get a margin of ±10 points at 95% confidence with 50% on one side, a poll needs 97 people."
+ },
+ {
+  "fn": "sizeTruth",
+  "args": [
+   "2",
+   "30.5",
+   "95"
+  ],
+  "expected": "To get a margin of ±2 points at 95% confidence with 30.5% on one side, a poll needs 2,036 people."
+ },
+ {
+  "fn": "sizeTruth",
+  "args": [
+   "4",
+   "99",
+   "95"
+  ],
+  "expected": "To get a margin of ±4 points at 95% confidence with 99% on one side, a poll needs 24 people."
+ },
+ {
+  "fn": "sizeTruth",
+  "args": [
+   "4",
+   "1",
+   "99"
+  ],
+  "expected": "To get a margin of ±4 points at 99% confidence with 1% on one side, a poll needs 42 people."
+ },
+ {
+  "fn": "sizeTruth",
+  "args": [
+   "0.25",
+   "50",
+   "95"
+  ],
+  "expected": "To get a margin of ±0.25 points at 95% confidence with 50% on one side, a poll needs 153,664 people."
+ },
+ {
+  "fn": "sizeTruth",
+  "args": [
+   "25",
+   "50",
+   "90"
+  ],
+  "expected": "To get a margin of ±25 points at 90% confidence with 50% on one side, a poll needs 11 people."
+ },
+ {
+  "fn": "sizeTruth",
+  "args": [
+   "1.5",
+   "70",
+   "99"
+  ],
+  "expected": "To get a margin of ±1.5 points at 99% confidence with 70% on one side, a poll needs 6,194 people."
+ },
+ {
+  "fn": "sizeTruth",
+  "args": [
+   "0.05",
+   "50",
+   "95"
+  ],
+  "expected": "ERR:margin must be from 0.1 to 50 points with at most 2 decimals"
+ },
+ {
+  "fn": "sizeTruth",
+  "args": [
+   "51",
+   "50",
+   "95"
+  ],
+  "expected": "ERR:margin must be from 0.1 to 50 points with at most 2 decimals"
+ },
+ {
+  "fn": "sizeTruth",
+  "args": [
+   "abc",
+   "50",
+   "95"
+  ],
+  "expected": "ERR:margin must be from 0.1 to 50 points with at most 2 decimals"
+ },
+ {
+  "fn": "sizeTruth",
+  "args": [
+   "3",
+   "0",
+   "95"
+  ],
+  "expected": "ERR:share must be a percent from 1 to 99 with at most 1 decimal"
+ },
+ {
+  "fn": "sizeTruth",
+  "args": [
+   "3",
+   "50",
+   "97"
+  ],
+  "expected": "ERR:confidence must be 90, 95 or 99"
+ },
+ {
+  "fn": "sizeTruth",
+  "args": [
+   "",
+   "50",
+   "95"
+  ],
+  "expected": "ERR:margin must be from 0.1 to 50 points with at most 2 decimals"
+ },
+ {
+  "fn": "sizeTruth",
+  "args": [
+   "-3",
+   "50",
+   "95"
+  ],
+  "expected": "ERR:margin must be from 0.1 to 50 points with at most 2 decimals"
+ },
+ {
+  "fn": "sizeTruth",
+  "args": [
+   "3.123",
+   "50",
+   "95"
+  ],
+  "expected": "ERR:margin must be from 0.1 to 50 points with at most 2 decimals"
+ },
+ {
+  "fn": "gapTruth",
+  "args": [
+   "800",
+   "52",
+   "1200",
+   "48",
+   "95"
+  ],
+  "expected": "Poll A has 52% of 800 people and poll B has 48% of 1,200 people. The gap is 4.00 points and its margin is ±4.47 points at 95% confidence, so the gap is not larger than its margin."
+ },
+ {
+  "fn": "gapTruth",
+  "args": [
+   "1000",
+   "50",
+   "1000",
+   "50",
+   "95"
+  ],
+  "expected": "Poll A has 50% of 1,000 people and poll B has 50% of 1,000 people. The gap is 0.00 points and its margin is ±4.38 points at 95% confidence, so the gap is not larger than its margin."
+ },
+ {
+  "fn": "gapTruth",
+  "args": [
+   "1000",
+   "55",
+   "1000",
+   "45",
+   "95"
+  ],
+  "expected": "Poll A has 55% of 1,000 people and poll B has 45% of 1,000 people. The gap is 10.00 points and its margin is ±4.36 points at 95% confidence, so the gap is larger than its margin."
+ },
+ {
+  "fn": "gapTruth",
+  "args": [
+   "1000",
+   "52",
+   "1000",
+   "48",
+   "90"
+  ],
+  "expected": "Poll A has 52% of 1,000 people and poll B has 48% of 1,000 people. The gap is 4.00 points and its margin is ±3.68 points at 90% confidence, so the gap is larger than its margin."
+ },
+ {
+  "fn": "gapTruth",
+  "args": [
+   "1000",
+   "52",
+   "1000",
+   "48",
+   "99"
+  ],
+  "expected": "Poll A has 52% of 1,000 people and poll B has 48% of 1,000 people. The gap is 4.00 points and its margin is ±5.76 points at 99% confidence, so the gap is not larger than its margin."
+ },
+ {
+  "fn": "gapTruth",
+  "args": [
+   "1",
+   "50",
+   "1",
+   "50",
+   "95"
+  ],
+  "expected": "Poll A has 50% of 1 person and poll B has 50% of 1 person. The gap is 0.00 points and its margin is ±138.59 points at 95% confidence, so the gap is not larger than its margin."
+ },
+ {
+  "fn": "gapTruth",
+  "args": [
+   "500",
+   "30",
+   "700",
+   "35.5",
+   "95"
+  ],
+  "expected": "Poll A has 30% of 500 people and poll B has 35.5% of 700 people. The gap is 5.50 points and its margin is ±5.36 points at 95% confidence, so the gap is larger than its margin."
+ },
+ {
+  "fn": "gapTruth",
+  "args": [
+   "10000000",
+   "50",
+   "10000000",
+   "50.1",
+   "95"
+  ],
+  "expected": "Poll A has 50% of 10,000,000 people and poll B has 50.1% of 10,000,000 people. The gap is 0.10 points and its margin is ±0.04 points at 95% confidence, so the gap is larger than its margin."
+ },
+ {
+  "fn": "gapTruth",
+  "args": [
+   "10000000",
+   "50",
+   "10000000",
+   "50.1",
+   "99"
+  ],
+  "expected": "Poll A has 50% of 10,000,000 people and poll B has 50.1% of 10,000,000 people. The gap is 0.10 points and its margin is ±0.06 points at 99% confidence, so the gap is larger than its margin."
+ },
+ {
+  "fn": "gapTruth",
+  "args": [
+   "300",
+   "10",
+   "300",
+   "20",
+   "90"
+  ],
+  "expected": "Poll A has 10% of 300 people and poll B has 20% of 300 people. The gap is 10.00 points and its margin is ±4.75 points at 90% confidence, so the gap is larger than its margin."
+ },
+ {
+  "fn": "gapTruth",
+  "args": [
+   "1200",
+   "47",
+   "900",
+   "51",
+   "95"
+  ],
+  "expected": "Poll A has 47% of 1,200 people and poll B has 51% of 900 people. The gap is 4.00 points and its margin is ±4.32 points at 95% confidence, so the gap is not larger than its margin."
+ },
+ {
+  "fn": "gapTruth",
+  "args": [
+   "0",
+   "50",
+   "100",
+   "50",
+   "95"
+  ],
+  "expected": "ERR:sample size must be a whole number from 1 to 10000000"
+ },
+ {
+  "fn": "gapTruth",
+  "args": [
+   "100",
+   "50",
+   "x",
+   "50",
+   "95"
+  ],
+  "expected": "ERR:sample size must be a whole number from 1 to 10000000"
+ },
+ {
+  "fn": "gapTruth",
+  "args": [
+   "100",
+   "0",
+   "100",
+   "50",
+   "95"
+  ],
+  "expected": "ERR:share must be a percent from 1 to 99 with at most 1 decimal"
+ },
+ {
+  "fn": "gapTruth",
+  "args": [
+   "100",
+   "50",
+   "100",
+   "100",
+   "95"
+  ],
+  "expected": "ERR:share must be a percent from 1 to 99 with at most 1 decimal"
+ },
+ {
+  "fn": "gapTruth",
+  "args": [
+   "100",
+   "50",
+   "100",
+   "50",
+   "85"
+  ],
+  "expected": "ERR:confidence must be 90, 95 or 99"
+ }
+]
