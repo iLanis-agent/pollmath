@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Poll Math - app</title>
+<style>
+  :root { --accent:#2f6b3f; --ink:#10230f; --paper:#f1f8f0; --soft:#dcebd8; }
+  * { box-sizing:border-box; margin:0; }
+  body { font-family:Georgia, "Times New Roman", serif; background:var(--paper); color:var(--ink); line-height:1.55; }
+  main { max-width:660px; margin:0 auto; }
+  .boundary { background:#fdeaea; border-left:6px solid #b03030; color:#5c1c1c; border-radius:6px; padding:1rem 1.1rem; }
+  .boundary strong { display:block; margin-bottom:.3rem; }
+  body { padding:2rem 1.2rem; }
+  h1 { font-size:1.8rem; color:var(--accent); }
+  .boundary { margin:1rem 0 1.4rem; }
+  .panel { background:var(--soft); border-left:5px solid var(--accent); border-radius:6px; padding:1rem 1.1rem; margin-bottom:1.1rem; }
+  h2 { font-size:1.1rem; margin-bottom:.6rem; }
+  p.note { font-size:.9rem; margin-bottom:.4rem; }
+  label { display:block; font-size:.9rem; margin:.45rem 0 .1rem; }
+  input, select { width:100%; padding:.45rem .55rem; font-size:1rem; border:1px solid #a9cfa4; border-radius:6px; background:#fff; color:var(--ink); }
+    .row2 { display:grid; grid-template-columns:1fr 1fr; gap:.6rem; }
+  .out { margin-top:.7rem; font-size:.98rem; background:#fff; border:1px dashed #a9cfa4; border-radius:6px; padding:.6rem .7rem; min-height:2.4rem; overflow-wrap:anywhere; }
+  .out.err { border-color:#b03030; color:#8a1f1f; }
+  footer { margin-top:1.8rem; font-size:.85rem; color:#5b8a55; }
+  a { color:var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Poll Math</h1>
+  <div class="boundary">
+    <strong>Boundary: arithmetic only</strong>
+    This page does arithmetic for a simple random sample, where everyone in the group had the same chance of being asked. It does not know how a real poll was run, so weighting, who did not answer, question wording and design effects are not in these numbers. It says nothing about whether any poll is good. The confidence levels are the fixed 90, 95 and 99 percent values and every figure is your own entry.
+  </div>
+
+  <div class="panel">
+    <h2>The margin truth</h2>
+    <p class="note">How far a poll result can sit from the whole group's answer.</p>
+    <div class="row2">
+      <div><label for="m-n">People asked</label><input id="m-n" type="text" value="1000"></div>
+      <div><label for="m-p">Share on one side (%)</label><input id="m-p" type="text" value="50"></div>
+      <div><label for="m-c">Confidence (%)</label><select id="m-c"><option value="90">90</option><option value="95" selected>95</option><option value="99">99</option></select></div>
+    </div>
+    <div class="out" id="m-out"></div>
+  </div>
+
+  <div class="panel">
+    <h2>The size truth</h2>
+    <p class="note">The smallest sample whose margin is no wider than the one you ask for.</p>
+    <div class="row2">
+      <div><label for="z-m">Margin (points)</label><input id="z-m" type="text" value="3"></div>
+      <div><label for="z-p">Share on one side (%)</label><input id="z-p" type="text" value="50"></div>
+      <div><label for="z-c">Confidence (%)</label><select id="z-c"><option value="90">90</option><option value="95" selected>95</option><option value="99">99</option></select></div>
+    </div>
+    <div class="out" id="z-out"></div>
+  </div>
+
+  <div class="panel">
+    <h2>The gap truth</h2>
+    <p class="note">The margin on the difference between two separate polls, each a simple random sample.</p>
+    <div class="row2">
+      <div><label for="g-n1">Poll A people</label><input id="g-n1" type="text" value="800"></div>
+      <div><label for="g-p1">Poll A share (%)</label><input id="g-p1" type="text" value="52"></div>
+      <div><label for="g-n2">Poll B people</label><input id="g-n2" type="text" value="1200"></div>
+      <div><label for="g-p2">Poll B share (%)</label><input id="g-p2" type="text" value="48"></div>
+      <div><label for="g-c">Confidence (%)</label><select id="g-c"><option value="90">90</option><option value="95" selected>95</option><option value="99">99</option></select></div>
+    </div>
+    <div class="out" id="g-out"></div>
+  </div>
+
+  <footer>Poll Math is arithmetic over the numbers you enter. <a href="index.html">Why it exists</a>.</footer>
+</main>
+<script src="engine.js"></script>
+<script>
+  function show(id, fn) {
+    const out = document.getElementById(id);
+    try { out.textContent = fn(); out.classList.remove("err"); }
+    catch (e) { out.textContent = e.message; out.classList.add("err"); }
+  }
+  function recalc() {
+    const v = (id) => document.getElementById(id).value;
+    show("m-out", () => marginTruth(v("m-n"), v("m-p"), v("m-c")));
+    show("z-out", () => sizeTruth(v("z-m"), v("z-p"), v("z-c")));
+    show("g-out", () => gapTruth(v("g-n1"), v("g-p1"), v("g-n2"), v("g-p2"), v("g-c")));
+  }
+  document.querySelectorAll("input, select").forEach((el) => {
+    el.addEventListener("input", recalc);
+    el.addEventListener("change", recalc);
+  });
+  recalc();
+</script>
+</body>
+</html>
